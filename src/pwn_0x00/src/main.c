@@ -7,7 +7,7 @@ int main()
     setvbuf(stdout, NULL, _IONBF, 0);
     // ------------------------------
 
-    int a = 0xDEADBEEF;
+    volatile int a = 0xDEADBEEF;
     char abd[4];
     gets(abd);
     
