@@ -1,0 +1,10 @@
+  pwn_0x02:
+    build: src/pwn_0x02/.
+    image: pwn_0x02
+    container_name: pwn_0x02
+    restart: always
+    ports:
+      - "42015:1337"
+    privileged: true
+    depends_on:
+      - pwn_0x01

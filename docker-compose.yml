@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  ####################################################################################################
+
+
+  ##### pwn challenge start #####
+  ##### port start : 42xxx
+
+  pwn_0x00:
+    build: src/pwn_0x00/.
+    image: pwn_0x00
+    container_name: pwn_0x00
+    restart: always
+    ports:
+      - "42013:1337"
+    privileged: true
+
+  pwn_0x01:
+    build: src/pwn_0x01/.
+    image: pwn_0x01
+    container_name: pwn_0x01
+    restart: always
+    ports:
+      - "42014:1337"
+    privileged: true
+    depends_on:
+      - pwn_0x00
+
+  pwn_0x02:
+    build: src/pwn_0x02/.
+    image: pwn_0x02
+    container_name: pwn_0x02
+    restart: always
+    ports:
+      - "42015:1337"
+    privileged: true
+    depends_on:
+      - pwn_0x01
