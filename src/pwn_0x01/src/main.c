@@ -5,7 +5,9 @@ int cant_c_me_lol()
     printf("\n"
            "> Congrats!!!\n"
            "> NISRA{d0nt_w4nna_ret_2_ma1n}\n");
-}
+                  //XXXXXXXXXXXXXXXXXXXXX
+    exit(0);
+}                 
 
 void vuln()
 {

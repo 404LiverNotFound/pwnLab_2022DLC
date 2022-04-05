@@ -4,8 +4,9 @@ int cant_c_me_lol()
 {
     printf("\n"
            "> Congrats!!!\n"
-           "> NISRA{xxxxxxxxxxxxxxxxxxxxx}\n");
-}
+           "> NISRA{XXXXXXXXXXXXXXXXXXXXX}\n");
+    exit(0);
+}                 
 
 void vuln()
 {

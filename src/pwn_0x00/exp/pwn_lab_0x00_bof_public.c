@@ -13,7 +13,7 @@ int main()
     
     if (a == 0x13371337)
     {
-        printf("NISRA{xxxxxxxxxxxxxxxxxxx}\n");
+        printf("NISRA{XXXXXXXXXXXXXXXXXXXXX}\n");
     }
     else
     {

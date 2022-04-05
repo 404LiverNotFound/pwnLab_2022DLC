@@ -2,8 +2,9 @@
 #include <string.h>
 
 int still_c4nt_c_me_yet()
-{
+{                 //XXXXXXXXXXXXXXXXXXXXX
     printf("> NISRA{add3d_4nn0y1ng_strl3n}\n");
+    exit(0);
 }
 
 void another_vuln()

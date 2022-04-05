@@ -7,13 +7,13 @@ int main()
     setvbuf(stdout, NULL, _IONBF, 0);
     // ------------------------------
 
-    volatile int a = 0xDEADBEEF;
+    int a = 0xDEADBEEF;
     char abd[4];
     gets(abd);
     
     if (a == 0x13371337)
-    {
-        printf("NISRA{1st_buff3r_0v3rfl0w}\n");
+    {               //XXXXXXXXXXXXXXXXXXXXX
+        printf("NISRA{f1rst_buff3r_0v3rfl0w}\n");
     }
     else
     {

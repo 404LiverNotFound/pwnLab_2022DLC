@@ -3,14 +3,15 @@
 
 int still_c4nt_c_me_yet()
 {
-    printf("> NISRA{xxxxxxxxxxxxxxxxxxxxx}\n");
+    printf("> NISRA{XXXXXXXXXXXXXXXXXXXXX}\n");
+    exit(0);
 }
 
 void another_vuln()
 {
-    char buf[0x420];
+    char buf[0x69];
     printf("> Input plz: ");
-    gets(buf);
+    read(0, buf, 0x420);
 
     if (strlen(buf) > 0x69)
     {
